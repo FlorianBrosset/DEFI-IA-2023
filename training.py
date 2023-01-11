@@ -107,7 +107,7 @@ best_params
 # In[9]:
 
 
-get_ipython().run_line_magic('pinfo', 'RandomForestRegressor')
+#get_ipython().run_line_magic('pinfo', 'RandomForestRegressor')
 
 
 # In[10]:
@@ -184,7 +184,7 @@ Submission.to_csv("submission2023.csv",header = ["price"],index_label="index")
 # In[24]:
 
 
-Submission
+print(Submission)
 
 
 # 
