@@ -145,6 +145,10 @@ pipeline = Pipeline([
 
 pipeline.fit(X, y)
 
+import pickle
+
+with open('random_forest.pkl', 'wb') as f:
+    pickle.dump(pipeline, f)
 
 # In[11]:
 
