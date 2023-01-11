@@ -8,7 +8,7 @@ Once trained on these data, our algorithm takes as input the features of the boo
 ## Features
 
 - train our model your self with "train.py "
-- predict the prices of the internal algorithm of the travel agency on unknown days with "app.py"
+- select the features of your choice, and predict the prices of the internal algorithm of the travel agency on unknown days with "app.py"
 
 see Usage section for commands
 ## Installation
@@ -23,8 +23,13 @@ $git clone https://github.com/FlorianBrosset/DEFI-IA-2023
 Then , to train our model or launch the gradio application from the docker container, run the following commands:
 
 $cd DEFI-IA-2023
+
 $sudo docker build - < Dockerfile --tag [nom du dock]
+
 $sudo docker run -it --name [nom du conteneur] -v [path actuel]:/workspace/[nom du dossier dans le conteneur] [nom du docker]
+
 $cd workspace/[nom du dossier dans le conteneur]
+
 $python app.py 
+
 $python train.py 
